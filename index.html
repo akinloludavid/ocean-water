@@ -1,12 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean water</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "style.css">
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
 </head>
 <body>
-    <h1>New repo for practicing git </h1>
+
+  <div class="container-fluid wrapper"> 
+    <main class = "container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent container">
+        <a class="navbar-brand" href="#"><img src = "./images/logo-bookmark.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICING</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <a href = "#" class="btn btn-outline-danger my-2 my-sm-0" id = "login">LOGIN</a>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <!--Second section-->
+    <div class="row hero-section container">
+        <div class="col-lg-5 col-xs-12 hero-copy">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your favourite websites. Open a new 
+               browser tab and see your sites load instantly. Try it for free.</p> 
+            
+            <div class = "get d-flex row">
+              <div class= "col-xs-4">
+               <a href="" class = " btn btn-primary">Get it on Chrome</a>
+
+              </div>
+              <div class = "col-xs-4">
+                 <a href="" class = "btn btn bg-light">Get it on Firefox</a>
+
+              </div>
+            </div>
+            
+        </div>
+
+
+        <div class="col-lg-7 hero-image d-flex">
+          <div class="bg-illustration"></div>
+          <img src="./images/illustration-hero.svg" alt="">
+        </div>
+    </div>
+  
+
+
+  <!--Features-->
+
+  <div id="features" class = "text-center">
+      <h3 class>Features</h3>
+      <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+    Your bookmarks sync between your devices so you can access them on the go.</p>
+  </div>
+
+
+
+  <!--Bookmark Section-->
+    <div id="bookmark" class="row text-center">
+        <div class="col-md-4">
+          <p  class = "tab"> Simple Bookmarking</p>
+
+        </div>
+
+        <div class="col-md-4">
+          <p class = "tab"> Speedy Searching</p>
+        </div>
+
+        <div class="col-md-4">
+          <p class = "tab">  Easy Sharing</p>
+        </div>
+
+        <hr/>
+    </div>
+
+    <div id="bookmarkOptions" class = "container row  my-4">
+        
+          <div class="col-md-12 bookFeatures d-none">
+            <div class="col-md-6">
+              <div>
+                <img src="./images/illustration-features-tab-1.svg" alt="lk">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class = "bookmarkText">
+                <h3 class = "mb-4"> Bookmark in one click</h3>
+
+                <p class = "mb-5">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                gives you complete control over how you manage your favourite sites.</p>
+
+                <button class = "btn btn-primary">More Info</button>
+              </div>
+            
+            </div>
+
+        </div>
+
+
+        <div class="col-md-12 bookFeatures d-none">
+          <div class="col-md-6">
+            <div>
+              <img src="./images/illustration-features-tab-2.svg" alt="lk">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class = "bookmarkText">
+              <h3 class = "mb-4"> Intelligent search</h3>
+
+              <p class = "mb-5">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks. </p>
+
+              <button class = "btn btn-primary">More Info</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 bookFeatures d-none">
+      
+          <div class="col-md-6">
+            <div>
+              <img src="./images/illustration-features-tab-3.svg" alt="lk">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class = "bookmarkText">
+              <h3 class = "mb-4">  Share your bookmarks</h3>
+
+              <p class = "mb-5">
+                Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+
+              <button class = "btn btn-primary">More Info</button>
+            </div>
+    
+          </div>
+        </div>
+    </div>
+
+
+  <!--Download-->
+  <div id="download" class = "text-center">
+      <h3>Download the extension</h3>
+      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+  </div>
+
+
+<!--Card Section-->
+  <div class="card-section container text-center row">
+    <div class = "col-md-4 ">
+      <div class="card border-light">
+          <img src="./images/logo-chrome.svg" alt="">
+          <h3>Add to Chrome</h3>
+          <p>Minimum version 62</p>
+          <img src="./images/bg-dots.svg" class = "dots" alt="">
+          <button class = "btn btn-primary">Add & Install Extension</button>
+
+      </div>
+    </div>
+
+    <div class = "col-md-4">
+      <div class="card border-light" id = "firefox">
+          <img src="./images/logo-firefox.svg" alt="">
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+          <img src="./images/bg-dots.svg" class = "dots" alt="">
+          <button class = "btn btn-primary">Add & Install Extension</button>
+      </div>
+    </div>
+
+     <div class = "col-md-4">
+      <div class="card border-light" id = "opera">
+           <img src="./images/logo-opera.svg" alt="">
+          <h3>Add to Opera</h3>
+          <p>Minimum version 46</p>
+          <img src="./images/bg-dots.svg" class = "dots" alt="">
+          <button class = "btn btn-primary">Add & Install Extension</button>
+      </div>
+    </div>
+  </div>
+
+
+    <!--FAQ-->
+    <div class="faq-section container">
+        <div class=" text-center faq-heading container">
+          <h3 >Frequently Asked Questions</h3> 
+          <p>Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.</p>
+        </div>
+        
+        <div class = "faq container">
+        
+            <!-- Question 1 -->
+            <hr/>
+            <div class="question d-flex row">
+              <div class = "col-md-10">
+                <p>What is Bookmark?</p>
+              </div>
+              
+              <div class = "col-md-2"> 
+                <img class = "caret" src="./images/icon-arrow.svg" alt="" class = "img-fluid ml-3 caret">
+              </div>
+            </div>
+
+            <!-- Answer 1 -->
+            <div class="answer d-none">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+
+            <!-- Question 2 -->
+            <hr/>
+
+            <div class="question d-flex row">
+                <div class = "col-md-10">
+                  <p>How can I request a new browser?<p>
+                </div>
+                <div class = "col-md-2">
+                  <img class = "caret" src="./images/icon-arrow.svg" alt="" class = "img-fluid ml-3 caret">
+                </div>
+            </div>
+
+            <!-- Answer 2 -->
+            <div class="answer d-none">
+                <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+
+            <!-- Question 3 -->
+            <hr/>
+            <div class="question d-flex row">
+                <div class = "col-md-10">
+                  <p>Is there a mobile app?</p>
+                </div>
+                <div class = "col-md-2"> 
+                  <img src="./images/icon-arrow.svg" alt="" class = "img-fluid ml-3 caret">
+                
+                </div>
+            </div>
+            
+
+            <!-- Answer 3 -->
+            <div class="answer d-none">
+                <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+            </div>
+            
+
+            <!-- Question 4 -->
+            <hr/>
+            <div class="question d-flex row">
+                <div class = "col-md-10">
+                <p>What about other Chromium browsers?</p>
+
+                </div>
+                <div class = "col-md-2"> 
+                <img src="./images/icon-arrow.svg" alt="" class = "img-fluid ml-3 caret">
+                </div>
+            </div>
+            
+
+            <!-- Answer 4 -->
+            <div class="answer d-none">
+                <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            </div>  
+            <hr/>
+
+            <div class = "text-center">
+                <button class = "btn btn-primary" id = "moreInfo">More Info</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+</main>
+
+<footer class = "container-fluid bg-primary" id = "footer">
+    
+    <div id = "footer-body" class = "text-center container">
+        <p>35,000+ already joined</p>
+        <h3>Stay up-to-date with what we’re doing</h3>
+        
+        <form action="">
+            <input type="email" placeholder = "Enter Your email address">
+            <button class = "btn btn-danger">Contact Us</button>
+        </form>
+      
+    </div>
+
+    <div id="footer-foot" class = "row d-flex ">
+        <div class="col-md-12 d-flex">
+            <img  class = "d-none" src="./images/logo-bookmark.svg" alt="">
+
+            <ul class = "d-flex">
+              <li>Features</li>
+              <li>Pricing </li>
+              <li> Contact </li>
+            </ul>
+            <div class = "mediaIcon text-right ">
+                <img src="./images/icon-facebook.svg" alt="" class = "img-fluid">
+                <img src="./images/icon-twitter.svg" alt="">
+        
+            </div>
+        </div>
+
+    </div>
+</footer>
+</div>
+ 
+
+  
+  
+
+ 
+
+ 
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="mailto:akinloludavid2727@gmail.com">AKINLOLU</a>.
+    </p>
+  </footer>
+
+<script src = "./app.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="fontawesome/js/all.js"></script>
 </body>
 </html>
